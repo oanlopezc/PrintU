@@ -1,5 +1,73 @@
 <!DOCTYPE html>
-
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Text Alignment Example</title>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script type="text/javascript" src="jquery.column.js"></script>
+		<script type="text/javascript" src="../lib/jquery.text-align.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				var myCells = $('table#example td');
+			
+				myCells.nthCol(1).textAlign(',');
+				myCells.nthCol(2).textAlign(',');
+				myCells.nthCol(3).textAlign(',');
+			});
+		</script>
+		<style>
+			body {
+				font-family: Verdana, Arial, Sans-Serif;
+				font-size: 0.95em;
+			}
+			h1, h2 {
+				font-weight: normal;
+				font-family: Georgia, Times, Serif;
+			}
+			table {
+				padding: 0.75em;
+				display: inline-block;
+				border: 1px solid rgb(180,180,180);
+				border-collapse: collapse;
+			}
+			th, td {
+				padding: 0.1em 1.5em;
+				vertical-align: top;
+				text-align: left;
+				font-weight: normal;
+			}
+			thead th {
+				font-weight: bold;
+			}
+			thead {
+				border-bottom: 1px solid rgb(180,180,180);
+			}
+			tfoot {
+				border-top: 1px solid rgb(180,180,180);
+			}
+			table tr.highlight {
+				border: 2px solid rgb(100,100,100);
+			}
+			table col.highlight {
+				border: 2px solid rgb(100,100,100);
+			}
+			table td.highlight, table th.highlight {
+				border-right: 2px solid rgb(100,100,100);
+				border-left: 2px solid rgb(100,100,100);
+			}
+			table thead th.highlight {
+				border-top: 2px solid rgb(100,100,100);
+			}
+			table tfoot td.highlight {
+				border-bottom: 2px solid rgb(100,100,100);
+			}
+			pre {
+				background-color: rgb(240, 240, 240);
+				display: inline-block;
+				padding: 2em;
+			}
+		</style>
+	</head>
 
 # Print U
 
