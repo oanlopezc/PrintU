@@ -65,7 +65,8 @@ Este modulo esta compuesto por un Arduino UNO, una Raspberry Pi3 y una Matrix Cr
 
 El arduino esta encargado de la lectura del NFC y el despliegue de datos en el display, esto, implementado un Sistema Operativo de Tiermpo Real (RTOS) haciendo uso de FreeRTOS. La Raspberry Pi está encargada de adminsitrar todo el dispositvo, además de comunicarse con la impresora. 
 
-A continuación se puede apreciar el primer prototipo de PrintUnit junto con la imrpesara de pruebas.
+A continuación se puede apreciar el primer prototipo de PrintUnit junto con la imrpesara de pruebas:
+
 <img src="Images/PUP.jpg">
 ### Interfaz Usuario
 
