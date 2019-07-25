@@ -81,5 +81,8 @@ La aplicación es la encargada de:
   
 Esta aplicación fue desarrollada en IONIC junto con NodeRed. A continuación se muestran algunas de las pantallas de la aplicación.
 
-<img align="left" width="360" heigth="640" src="Images/File.png">
-<img align="right" width="360" heigth="640" src="Images/Inicio.png">
+<img align="left" width="360" heigth="640" src="Images/Inicio.png">
+<img align="right" width="360" heigth="640" src="Images/Log.png">
+
+<img align="left" width="360" heigth="640" src="Images/file.png">
+<img align="right" width="360" heigth="640" src="Images/map.png">
