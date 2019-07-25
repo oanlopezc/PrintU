@@ -43,6 +43,7 @@ El primer paso sólo debe llevarse a cabo la primera vez que el usuario se vincu
 
 A continuación, se muestra a detalle la funcionalidad de los dos elementos a desarrollar en la primera fase, PrintUnit y la interfaz del usuario.
 </div>
+
 ### PrintUnit
 
 PrintUnit es el dispositivo encargado de:
