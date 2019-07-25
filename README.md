@@ -16,21 +16,29 @@ La inversión inicial es baja respecto a las ganancias esperadas y los gastos en
 ## Descripción Técnica
 
 El servicio PrintU está basado en una red de puntos de impresión  inicialmente a lo largo del campus de la Universidad Nacional capaces de conectarse a internet y ser manejadas directamente desde el smartphone del usuario.
+
 Cada uno de estos puntos de impresión estaría compuesto por una impresora y un dispositivo desarrollado por PrintU encargado de establecer la conexión de la impresora y el usuario por medio de internet. Por facilidad a este dispositivo le llamaremos PrintUnit a lo largo de documento.
+
 En esta primera fase de proyecto se plantea desarrollar un primer prototipo de PrintUnit además de la primera versión de la interfaz del usuario.
+
 El protocolo de impresión se dará de la siguiente forma:
+
 El servicio PrintU está basado en una red de puntos de impresión  inicialmente a lo largo del campus de la Universidad Nacional capaces de conectarse a internet y ser manejadas directamente desde el smartphone del usuario.
+
 Cada uno de estos puntos de impresión estaría compuesto por una impresora y un dispositivo desarrollado por PrintU encargado de establecer la conexión de la impresora y el usuario por medio de internet. Por facilidad a este dispositivo le llamaremos PrintUnit a lo largo de documento.
+
 En esta primera fase de proyecto se plantea desarrollar un primer prototipo de PrintUnit además de la primera versión de la interfaz del usuario.
-El protocolo de impresión se dará de la siguiente forma:
-El usuario crea una cuenta en la aplicación celular de PrintU, a la cual vincula su carnet estudiantil.
-El usuario selecciona el archivo a imprimir desde su celular y establece parámetros de impresión (B/N, color, páginas, etc...)
-La aplicación calcula el costo de la impresión
-La aplicación envía al servidor en internet el documento con los parámetros ya establecidos.
-El usuario se identifica por medio de su carnet en cualquiera de las impresoras dispuestas. En este paso es descontado el costo de la impresión del saldo previamente cargado a la cuenta del usuario desde cualquier plataforma de pagos por internet (pse/nequi/rapipay/.../).
-PrintUnit lee el carnet con un lector RFID/NFC y valida la identificación
-En una validación exitosa, PrintUnit se encarga de ligar este usuario con impresiones pendientes en el servidor y envía dicho documento a la impresora. Todo esto mientras muestra su estado por medio de un display OLED.
-La impresora imprime el documento y el Usuario retira el documento.
+
+  - El protocolo de impresión se dará de la siguiente forma:
+
+  - El usuario crea una cuenta en la aplicación celular de PrintU, a la cual vincula su carnet estudiantil.
+  - El usuario selecciona el archivo a imprimir desde su celular y establece parámetros de impresión (B/N, color, páginas, etc...)
+  - La aplicación calcula el costo de la impresión
+  - La aplicación envía al servidor en internet el documento con los parámetros ya establecidos.
+  - El usuario se identifica por medio de su carnet en cualquiera de las impresoras dispuestas. En este paso es descontado el costo de la impresión del saldo previamente cargado a la cuenta del usuario desde cualquier plataforma de pagos por internet (pse/nequi/rapipay/.../).
+  - PrintUnit lee el carnet con un lector RFID/NFC y valida la identificación
+  - En una validación exitosa, PrintUnit se encarga de ligar este usuario con impresiones pendientes en el servidor y envía dicho documento a la impresora. Todo esto mientras muestra su estado por medio de un display OLED.    
+  - La impresora imprime el documento y el Usuario retira el documento.
 El primer paso sólo debe llevarse a cabo la primera vez que el usuario se vincula a PrintU. Los pasos 2 al 7 pueden llevarse a cabo en menos de 4 minutos y el octavo dependerá de la cantidad de hojas a imprimir..
 A continuación, se muestra a detalle la funcionalidad de los dos elementos a desarrollar en la primera fase, PrintUnit y la interfaz del usuario.
 PrintUnit
