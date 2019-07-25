@@ -41,13 +41,51 @@ while flag > 0:
 				break #deja de ver las siguientes lineas				
 			else:
 				recog=0
-		if recog == 1:
+		if recog==1:
+                        queue = open("queue.txt", "r")
+                        for line in queue:
+                                job= queue.readline()
+                                if user_id == job [2:6]: #and job[0] == 0:
+                                        o=int(job[7])
+                                        up=int(job[9])
+                                        n=int(job[11:14])
+                                        r1=int(job[15:18])
+                                        r2=int(job[19:22])
+                                        filename=(job[23:len(job)])
+                                        if o==0:
+                                                oC=' -o portrait'
+                                        else:
+                                                oC=' -o landscape'
+
+                                        if up==0:
+                                                upC=' -o number-up=2'
+                                        else:
+                                                upC=' -o number-up=1'
+
+                                        if r1==0:
+                                                rC=' -o page-ranges='+str(r2)
+                                        else:
+                                                rC=' -o page-ranges='+str(r1)+'-'+str(r2)
+
+                                        cmd= 'lp -o fit-to-page'+oC+upC+rC+' '+filename
+
+                                        for x in range(0, n):
+                                       
+						os.system(cmd)
+                                        exist = 1
+
+                                else:
+                                        pass    	
+					
+			if exist == 1:
 			#print('imprimiendo')			
-			NFC.write(str.encode('2'))
-			time.sleep(10)        
-			active = 0
+				NFC.write(str.encode('2'))
+				time.sleep(10)        
+				active = 0
+			else:			
+				NFC.write(str.encode('4'))
+				active=0
 		else:
-			#print('No registrado')			
 			NFC.write(str.encode('3'))
 			active=0
 	else:
