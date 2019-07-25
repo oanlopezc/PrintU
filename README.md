@@ -2,8 +2,14 @@
 
 # Print U
 
-## Resumen Ejecutivo
 <img align="right" width="100" heigth="100" src="PrintU.png">
+<div align= "justify">
+  
+En este repositorio se puede encontrar toda la información y os códigos utilizados para el proyecto "Print U" desarrollado para la materia Sistemas Embebidos de la Universidad Nacional de Colombia para el periodo 2019-I.
+</div>
+
+## Resumen Ejecutivo
+
 <div align= "justify">
 Imprimir, es sin duda, una de las actividades comunes en entidades educativas y estatales. No obstante, el servicio de impresión se ha mantenido inalterado durante años apartándose de mejoras tanto logísticas como tecnológicas. Todo lo anterior lleva al mecanismo actual a requerir tiempos de servicio bastante largos y horarios no ajustados a la necesidad de los usuarios. Es allí donde nace PrintU, una solución eficiente e inteligente para la impresión de documentos enfocada en el usuario y el desarrollo de industria sostenible. 
 
