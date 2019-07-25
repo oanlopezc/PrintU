@@ -63,18 +63,23 @@ PrintUnit es el dispositivo encargado de:
  
 Este modulo esta compuesto por un Arduino UNO, una Raspberry Pi3 y una Matrix Creator ONE. 
 
-El arduino esta encargado de la lectura del NFC y el despliegue de datos en el display, esto, implementado un Sistema Operativo de Tiermpo Real (RTOS) haciendo uso de FreeRTOS. La Raspberry Pi está encargada de adminsitrar todo el dispositvo, además de comunicarse con la impresora. 
+El arduino esta encargado de la lectura del NFC y el despliegue de datos en el display, esto, implementado un Sistema Operativo de Tiermpo Real (RTOS) haciendo uso de FreeRTOS. La Raspberry Pi está encargada de adminsitrar todo el dispositvo, además de comunicarse con la impresora. La Raspberry además hace uso de NodeRed para obtener los archivos de la lista de usuarios y la lista de impresiones desde la base de datos.
 
 A continuación se puede apreciar el primer prototipo de PrintUnit junto con la imrpesara de pruebas:
 
 <img src="Images/PUP.jpg">
-### Interfaz Usuario
 
-La interfaz de usuario es la encargada de:
+### Aplicación
+
+La aplicación es la encargada de:
 
   - Subir a internet el documento a imprimir
   - Establecer parámetros de impresión
-  - Seleccionar impresora
   - Realizar el pago (Modalidad Virtual)
   - Mostrar mensajes de confirmación
+  - Desplegar la ubicación de las impresoras
+  
+Esta aplicación fue desarrollada en IONIC junto con NodeRed. A continuación se muestran algunas de las pantallas de la aplicación.
 
+<img align="left" width="360" heigth="640" src="Images/File.png">
+<img align="right" width="360" heigth="640" src="Images/Inicio.png">
