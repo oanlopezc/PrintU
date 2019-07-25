@@ -85,4 +85,4 @@ Esta aplicación fue desarrollada en IONIC junto con NodeRed. A continuación se
 <img align="right" width="360" heigth="640" src="Images/Log.png">
 
 <img align="left" width="360" heigth="640" src="Images/file.png">
-<img align="right" width="360" heigth="640" src="Images/map.png">
+<img align="right" width="360" heigth="640" src="Images/Map.png">
