@@ -2,7 +2,7 @@
 
 # Print U
 
-<img align="right" width="100" heigth="100" src="PrintU.png">
+<img align="right" width="100" heigth="100" src="images/PrintU.png">
 <div align= "justify">
 En este repositorio se puede encontrar toda la información y os códigos utilizados para el proyecto "Print U" desarrollado para la materia Sistemas Embebidos de la Universidad Nacional de Colombia para el periodo 2019-I.
 </div>
