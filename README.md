@@ -3,7 +3,7 @@
    font-size: font-size;
   }
 
-  h1 { font-size: font-size; }
+  h1 { font-size: 200; }
   h2 { font-size: font-size; }
   h3 { font-size: font-size; }
 }
