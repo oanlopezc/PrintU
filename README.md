@@ -22,9 +22,9 @@ La inversión inicial es baja respecto a las ganancias esperadas y los gastos en
 ## Descripción Técnica
 
 <div align= "justify">
-El servicio PrintU está basado en una red de puntos de impresión  inicialmente a lo largo del campus de la Universidad Nacional capaces de conectarse a internet y ser manejadas directamente desde el smartphone del usuario.
+El servicio PrintU está basado en una red de puntos de impresión  inicialmente a lo largo del campus de la Universidad Nacional capaces de conectarse a internet y ser manejados directamente desde el smartphone del usuario.
 
-Cada uno de estos puntos de impresión estaría compuesto por una impresora y un dispositivo desarrollado por PrintU encargado de establecer la conexión de la impresora y el usuario por medio de internet. Por facilidad a este dispositivo le llamaremos PrintUnit a lo largo de documento.
+Cada uno de estos puntos de impresión estaría compuesto por una impresora y un dispositivo desarrollado por PrintU encargado de establecer la conexión de la impresora y el usuario por medio de internet. Por facilidad, a este dispositivo le llamaremos PrintUnit a lo largo de documento.
 
 En esta primera fase de proyecto se plantea desarrollar un primer prototipo de PrintUnit además de la primera versión de la interfaz del usuario.
 
@@ -39,16 +39,16 @@ En esta primera fase de proyecto se plantea desarrollar un primer prototipo de P
   1. El protocolo de impresión se dará de la siguiente forma:
 
   2. El usuario crea una cuenta en la aplicación celular de PrintU, a la cual vincula su carnet estudiantil.
-  3. El usuario selecciona el archivo a imprimir desde su celular y establece parámetros de impresión (B/N, color, páginas, etc...)
-  4. La aplicación calcula el costo de la impresión
-  5. La aplicación envía al servidor en internet el documento con los parámetros ya establecidos.
-  6. El usuario se identifica por medio de su carnet en cualquiera de las impresoras dispuestas. En este paso es descontado el costo de la impresión del saldo previamente cargado a la cuenta del usuario desde cualquier plataforma de pagos por internet (pse/nequi/rapipay/.../).
+  3. El usuario selecciona el archivo a imprimir desde su celular y establece parámetros de impresión (B/N o color, páginas a imprimir, etc...)
+  4. La aplicación envía al servidor en internet el documento con los parámetros ya establecidos.
+  5. El usuario se identifica por medio de su carnet en cualquiera de las impresoras dispuestas. En este paso es descontado el costo de la impresión del saldo previamente cargado a la cuenta del usuario desde cualquier plataforma de pagos por internet (pse/nequi/rapipay/.../).
   7. PrintUnit lee el carnet con un lector RFID/NFC y valida la identificación
-  8. En una validación exitosa, PrintUnit se encarga de ligar este usuario con impresiones pendientes en el servidor y envía dicho documento a la impresora. Todo esto mientras muestra su estado por medio de un display OLED.    
+  8. En una validación exitosa, PrintUnit se encarga de ligar este usuario con impresiones pendientes en el servidor y envía dicho documento a la impresora. Todo esto mientras muestra su estado por medio de un display LED.    
   9. La impresora imprime el documento y el Usuario retira el documento.
+  
 El primer paso sólo debe llevarse a cabo la primera vez que el usuario se vincula a PrintU. Los pasos 2 al 7 pueden llevarse a cabo en menos de 4 minutos y el octavo dependerá de la cantidad de hojas a imprimir.
 
-A continuación, se muestra a detalle la funcionalidad de los dos elementos a desarrollar en la primera fase, PrintUnit y la interfaz del usuario.
+A continuación, se muestra a detalle la funcionalidad de los dos elementos a desarrollar en la primera fase, PrintUnit y la aplicación.
 </div>
 
 ### PrintUnit
@@ -57,9 +57,16 @@ PrintUnit es el dispositivo encargado de:
 
   - Gestionar la comunicación con la impresora
   - Conectarse a Internet
-  - Descargar el documento a imprimir desde internet
   - Identificar al usuario por medio del Carnet Universitario
+  - Descargar el documento a imprimir desde internet junto con sus parámetros de imrpesión
   - Mostrar información de estado del punto de impresión
+ 
+Este modulo esta compuesto por un Arduino UNO, una Raspberry Pi3 y una Matrix Creator ONE. 
+
+El arduino esta encargado de la lectura del NFC y el despliegue de datos en el display, esto, implementado un Sistema Operativo de Tiermpo Real (RTOS) haciendo uso de FreeRTOS. La Raspberry Pi está encargada de adminsitrar todo el dispositvo, además de comunicarse con la impresora. 
+
+A continuación se puede apreciar el primer prototipo de PrintUnit junto con la imrpesara de pruebas.
+<img align="right" width="100" heigth="100" src="Images/PUP.png">
 ### Interfaz Usuario
 
 La interfaz de usuario es la encargada de:
