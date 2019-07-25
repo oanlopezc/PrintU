@@ -1,15 +1,6 @@
-.markdown-preview {
- &, h4, h5, h6 {
-   font-size: font-size;
-  }
-
-  h1 { font-size: 200; }
-  h2 { font-size: font-size; }
-  h3 { font-size: font-size; }
-}
-<h1>
-**Print U**
- </h1>
+<sub>
+ Print U
+ </sub>
 <img align="right" width="100" heigth="100" src="PrintU.png">
 
 Imprimir, es sin duda, una de las actividades comunes en entidades educativas y estatales. No obstante, el servicio de impresión se ha mantenido inalterado durante años apartándose de mejoras tanto logísticas como tecnológicas. Todo lo anterior lleva al mecanismo actual a requerir tiempos de servicio bastante largos y horarios no ajustados a la necesidad de los usuarios. Es allí donde nace PrintU, una solución eficiente e inteligente para la impresión de documentos enfocada en el usuario y el desarrollo de industria sostenible. 
