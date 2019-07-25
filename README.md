@@ -4,7 +4,7 @@
          <title>HTMLFont size</title>    
       </head>    
       <body>      
-         <x style="color:red;font-size:40px;">Heading</x>      
+         <h1 style="color:red;font-size:40px;">Heading</h1>      
          <p style="color:blue;font-size:18px;">This is demo text</p>    
       </body>
 </html>
