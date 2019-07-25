@@ -61,9 +61,13 @@ PrintUnit es el dispositivo encargado de:
   - Descargar el documento a imprimir desde internet junto con sus parámetros de imrpesión
   - Mostrar información de estado del punto de impresión
  
-Este modulo esta compuesto por un Arduino UNO, una Raspberry Pi3 y una Matrix Creator ONE. 
+Este modulo esta compuesto por un Arduino UNO y una Raspberry Pi3. 
+
+<img src="Images/caja_negra.jpg">
 
 El arduino esta encargado de la lectura del NFC y el despliegue de datos en el display, esto, implementado un Sistema Operativo de Tiermpo Real (RTOS) haciendo uso de FreeRTOS. La Raspberry Pi está encargada de adminsitrar todo el dispositvo, además de comunicarse con la impresora. La Raspberry además hace uso de NodeRed para obtener los archivos de la lista de usuarios y la lista de impresiones desde la base de datos.
+
+<img src="Images/Copia de Copia de Diagrama de caja negra.jpg">
 
 A continuación se puede apreciar el primer prototipo de PrintUnit junto con la imrpesara de pruebas:
 
