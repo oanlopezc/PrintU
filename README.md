@@ -29,16 +29,16 @@ Cada uno de estos puntos de impresión estaría compuesto por una impresora y un
 
 En esta primera fase de proyecto se plantea desarrollar un primer prototipo de PrintUnit además de la primera versión de la interfaz del usuario.
 
-  * El protocolo de impresión se dará de la siguiente forma:
+  1. El protocolo de impresión se dará de la siguiente forma:
 
-  * El usuario crea una cuenta en la aplicación celular de PrintU, a la cual vincula su carnet estudiantil.
-  * El usuario selecciona el archivo a imprimir desde su celular y establece parámetros de impresión (B/N, color, páginas, etc...)
-  * La aplicación calcula el costo de la impresión
-  * La aplicación envía al servidor en internet el documento con los parámetros ya establecidos.
-  * El usuario se identifica por medio de su carnet en cualquiera de las impresoras dispuestas. En este paso es descontado el costo de la impresión del saldo previamente cargado a la cuenta del usuario desde cualquier plataforma de pagos por internet (pse/nequi/rapipay/.../).
-  * PrintUnit lee el carnet con un lector RFID/NFC y valida la identificación
-  * En una validación exitosa, PrintUnit se encarga de ligar este usuario con impresiones pendientes en el servidor y envía dicho documento a la impresora. Todo esto mientras muestra su estado por medio de un display OLED.    
-  * La impresora imprime el documento y el Usuario retira el documento.
+  2. El usuario crea una cuenta en la aplicación celular de PrintU, a la cual vincula su carnet estudiantil.
+  3. El usuario selecciona el archivo a imprimir desde su celular y establece parámetros de impresión (B/N, color, páginas, etc...)
+  4. La aplicación calcula el costo de la impresión
+  5. La aplicación envía al servidor en internet el documento con los parámetros ya establecidos.
+  6. El usuario se identifica por medio de su carnet en cualquiera de las impresoras dispuestas. En este paso es descontado el costo de la impresión del saldo previamente cargado a la cuenta del usuario desde cualquier plataforma de pagos por internet (pse/nequi/rapipay/.../).
+  7. PrintUnit lee el carnet con un lector RFID/NFC y valida la identificación
+  8. En una validación exitosa, PrintUnit se encarga de ligar este usuario con impresiones pendientes en el servidor y envía dicho documento a la impresora. Todo esto mientras muestra su estado por medio de un display OLED.    
+  9. La impresora imprime el documento y el Usuario retira el documento.
 El primer paso sólo debe llevarse a cabo la primera vez que el usuario se vincula a PrintU. Los pasos 2 al 7 pueden llevarse a cabo en menos de 4 minutos y el octavo dependerá de la cantidad de hojas a imprimir.
 
 A continuación, se muestra a detalle la funcionalidad de los dos elementos a desarrollar en la primera fase, PrintUnit y la interfaz del usuario.
