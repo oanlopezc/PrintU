@@ -1,0 +1,109 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Nuevo Documento
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+<ion-card>
+<ion-list>
+  <ion-list-header>Caracteristicas de Impresión</ion-list-header>
+  <ion-item>
+    <ion-label>Color</ion-label>
+    <ion-select name="cs" placeholder="Selecciona uno" interface="action-sheet">
+      <ion-select-option value="baw">Blanco y Negro</ion-select-option>
+      <ion-select-option value="col">Color</ion-select-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-label>Tamaño</ion-label>
+    <ion-select name="ts" placeholder="Selecciona uno" interface="action-sheet">
+      <ion-select-option value="let">Letter 8.5x11 in</ion-select-option>
+      <ion-select-option value="A4">A4 210x297mm</ion-select-option>
+      <ion-select-option value="leg">Legal 8.5x14 in</ion-select-option>
+      <ion-select-option value="A2">A2 Envelope 4.7x5.75mm</ion-select-option>
+      <ion-select-option value="A5">A5 148x210mm</ion-select-option>
+      <ion-select-option value="A6">A6 105x148mm</ion-select-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-label>Doble página</ion-label>
+    <ion-select name="dps" placeholder="Selecciona uno" interface="action-sheet">
+      <ion-select-option value="doff">Off</ion-select-option>
+      <ion-select-option value="dp">Borde largo (Standar)</ion-select-option>
+      <ion-select-option value="dpr">Borde Corto (Flip)</ion-select-option>
+    </ion-select>
+  </ion-item>
+</ion-list>
+</ion-card>
+
+<ion-card>
+<ion-list>
+  <ion-radio-group>
+    <ion-list-header>
+      <ion-label>Paginas a imprimir</ion-label>
+    </ion-list-header>
+
+    <ion-item>
+      <ion-label>Todas las paginas</ion-label>
+      <ion-radio slot="start" value="allpage" (click)="tpag()" checked></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Una sola pagina</ion-label>
+      <ion-radio slot="start" value="unapg" (click)="unapag()"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Rango</ion-label>
+      <ion-radio slot="start" value="rang" (click)="rpag()"></ion-radio>
+    </ion-item>
+  </ion-radio-group>
+</ion-list>
+<ion-row>
+<ion-col>
+	<ion-item>
+		<ion-label position="floating" >Pg. inicial</ion-label>
+		<ion-input type="number" name="pgini" inputmode="numeric" [disabled]="actpi" clear-input="true"></ion-input>
+	</ion-item>
+</ion-col>
+<ion-col>
+	<ion-item>
+		<ion-label position="floating" >Pg. final</ion-label>
+		<ion-input type="number" name="pagfin" inputmode="numeric" [disabled]="actpf" clear-input="true"></ion-input>
+	</ion-item>
+</ion-col>
+</ion-row>
+</ion-card>
+
+<ion-card>
+  <ion-item>
+    <ion-label position="floating" >Numero de Impresiones</ion-label>
+    <ion-input type="number" name="ncopias" inputmode="numeric" clear-input="true" value="1" maxlength="2">
+    </ion-input>
+  </ion-item>
+</ion-card>
+
+<ion-card>
+  <ion-button size="large" color="primary" expand="block" (click)="choosefile()">Seleccionar Archivo
+  </ion-button>
+  <ion-label> <b>{{uploadtext}}</b></ion-label>
+</ion-card>
+
+<ion-card>
+  <ion-button size="large" color="secondary" expand="block" [disabled]="bsubir" (click)='uploadFile()'>Confirmar
+  </ion-button>
+</ion-card>
+
+<ion-card>
+  <ion-button href="http://10.203.163.52" size="large" color="warning" expand="block">Otra
+  </ion-button>
+</ion-card>
+
+</ion-content>

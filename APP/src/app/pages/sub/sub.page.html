@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>OMAAY</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+	<form #form="ngForm" (ngSubmit)="registro(form)" method="post">
+		<ion-label position="floating">Nombre</ion-label>
+		<ion-input type="text" ngModel name="nombre" inputmode="text" clear-input="true" minlength="3" maxlength="25" autocomplete="on" autocorret="on"></ion-input>
+		<ion-label position="floating">Apellido</ion-label>
+		<ion-input type="text" ngModel name="apellido" inputmode="text" clear-input="true" minlength="3" maxlength="25" autocomplete="on" autocorret="on"></ion-input>
+		<ion-label position="floating" >Email (UN)</ion-label>
+    	<ion-input type="email" ngModel name="email" inputmode="email" clear-input="true" value="@unal.edu.co"></ion-input>
+    	<ion-label position="floating" >Contraseña</ion-label>
+    	<ion-input type="password" ngModel name="password" inputmode="password" clear-input="true" minlength="8" maxlength="16" ></ion-input>
+    	<ion-label position="floating" >NFC ID</ion-label>
+    	<ion-input type="text" ngModel name="NFC_id" inputmode="text"></ion-input>
+    	<ion-button type="submit" expand="block">Crear</ion-button>
+    </form>
+</ion-content>

@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Reguistrate
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+	<ion-card>
+      <form #form="ngForm" (ngSubmit)="registro(form)" method="post">
+  		<ion-card-header>
+			<ion-card-title>Datos Personales</ion-card-title>
+		</ion-card-header>
+		<ion-card-content>
+			<ion-item>
+				<ion-label position="floating">Nombre</ion-label>
+				<ion-input type="text" ngModel name="name" inputmode="text" clear-input="true" minlength="3" maxlength="25" autocomplete="on" autocorret="on"></ion-input>
+			</ion-item>
+			<br>
+			<ion-item>
+				<ion-label position="floating">Apellido</ion-label>
+				<ion-input type="text" ngModel name="apellido" inputmode="text" clear-input="true" minlength="3" maxlength="25" autocomplete="on" autocorret="on"></ion-input>
+			</ion-item>
+			<br>
+			<ion-item>
+    			<ion-label position="floating" >Email (UN)</ion-label>
+    			<ion-input type="email" ngModel name="email" inputmode="email" clear-input="true" value="@unal.edu.co"></ion-input>
+  			</ion-item>
+  			<br>
+  			<ion-item>
+    			<ion-label position="floating" >Contraseña</ion-label>
+    			<ion-input type="password" ngModel name="password" inputmode="password" clear-input="true" minlength="8" maxlength="16" ></ion-input>
+  			</ion-item>
+  			<br>
+  			<ion-item>
+    			<ion-label position="floating" >NFC ID</ion-label>
+    			<ion-input type="text" ngModel name="NFC_id" inputmode="text"></ion-input>
+  			</ion-item>
+      </ion-card-content>
+      </form>
+	</ion-card>
+	<ion-card>
+		<ion-button type="submit" expand="block" size="large">Registrarse</ion-button>
+		<p text-center>Ya tienes cuenta?</p>
+  		<ion-button expand="block" color="secondary">Ingresar</ion-button>
+	</ion-card>	
+
+
+</ion-content>

@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Iniciar Sesión
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+  <img class="icon" src="assets/icon/imagen_printU.jpeg" alt=""> 
+  <form #form="ngForm" (ngSubmit)="login(form)" method="post">
+  <ion-item>
+    <ion-label position="floating">Email(UN)</ion-label>
+    <ion-input type="email" name="email_i" inputmode="email" clear-input="true" value="@unal.edu.co"></ion-input>
+    </ion-item>
+    <ion-item>
+    <ion-label position="floating">Contraseña</ion-label>
+    <ion-input type="password" name="password_i" inputmode="password" clear-input="true" minlength="8" maxlength="16"></ion-input>
+    </ion-item>
+    <ion-button color="secondary" expand="block" size="small">Recordar Contraseña</ion-button>
+    <br>
+    <ion-button type="submit" expand="block" size="large" (Click)="login()">Entrar</ion-button>
+  </form> 
+<p text-center>¿Aún no tienes cuenta?</p>
+<ion-button expand="block" color="secondary">Regístrate</ion-button>
+</ion-card>
+</ion-content>
