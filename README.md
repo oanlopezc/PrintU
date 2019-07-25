@@ -18,7 +18,9 @@ Al enfocar la implementación de PrintU en universidades se puede calcular la re
 
 La inversión inicial es baja respecto a las ganancias esperadas y los gastos en insumos y mantenimiento permiten tener una alta rentabilidad en el negocio. Este proyecto se encuentra en etapa final de diseño y un primer prototipo está en desarrollo. En tres meses se podrá implementar una primer prueba piloto.
 </div>
+
 ## Descripción Técnica
+
 <div align= "justify">
 El servicio PrintU está basado en una red de puntos de impresión  inicialmente a lo largo del campus de la Universidad Nacional capaces de conectarse a internet y ser manejadas directamente desde el smartphone del usuario.
 
